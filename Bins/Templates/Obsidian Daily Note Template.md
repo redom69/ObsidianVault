@@ -10,19 +10,34 @@ tags: daily
 [[ <% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") %> |⬅️ Yesterday]] | [[<% tp.date.now("YYYY-MM-DD", 1, tp.file.title, "YYYY-MM-DD") %>|➡️ Tomorrow]] | [[<% tp.date.now("YYYY-[w]WW", 0, tp.file.title, "YYYY-MM-DD") %>|📖 Weekly]] | [[<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-MM-DD") %>|📅 Monthly]]
 
 ```button
-name Add to Log
-type command
-action QuickAdd: Capture to daily note
-color default
+name Add to Log 
+type command 
+action QuickAdd: Capture to daily note 
+color default 
+border-radius 12px 
+border 2px solid #ccc 
+background-color #f5f5f5
 ```
 ^button-rjgc
 
-## Daily Log
+```button
+name Create Task Button
+type command
+action QuickAdd: Create Task Button
+color blue
+border-radius 12px
+border 2px solid #007BFF
+```
+## ⏳ Time Log
 
 
-## [[Tasks Dashboard |Tasks]]
+## 🧠 Daily Learnings 
 
-> [!overdue]+ Due before <% tp.file.title %>
+
+
+## 📋[[Tasks Dashboard |Tasks]]
+
+> [!overdue]+ 🔴Due before <% tp.file.title %>
 > **Due before:** <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
 > ```tasks
 > due before <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
@@ -32,7 +47,7 @@ color default
 > group by function task.tags.map( (tag) => tag.split('/')[1] ? tag.split('/').slice(0, 2).join('/') : '')
 > ```
 
-> [!due-today]+ Due <% tp.file.title %>
+> [!due-today]+ 📅Due <% tp.file.title %>
 > ```tasks
 > due <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
 > not done
@@ -40,7 +55,7 @@ color default
 > hide recurrence rule
 > group by function task.tags.map( (tag) => tag.split('/')[1] ? tag.split('/').slice(0, 2).join('/') : '')
 
-> [!coming-soon]- Due soon after <% tp.file.title %>
+> [!coming-soon]- ⏳Due soon after <% tp.file.title %>
 > ```tasks
 > due after <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
 > due before <% tp.date.now("YYYY-MM-DD", 4, tp.file.title, "YYYY-MM-DD") %>
@@ -51,32 +66,42 @@ color default
 > group by function task.tags.map( (tag) => tag.split('/')[1] ? tag.split('/').slice(0, 2).join('/') : '')
 > ```
 
-> [!success]- Completed <% tp.file.title %>
+>[!coming-soon]- ⏳Due next month after <% tp.file.title %>
+> ```tasks
+> due after <% tp.date.now("YYYY-MM-DD", 4, tp.file.title, "YYYY-MM-DD") %>
+> due before <% tp.date.now("YYYY-MM-DD", 30, tp.file.title, "YYYY-MM-DD") %>
+> not done
+> hide due date
+> hide recurrence rule
+> group by due
+> group by function task.tags.map( (tag) => tag.split('/')[1] ? tag.split('/').slice(0, 2).join('/') : '')
+> ```
+
+> [!success]- 🌟 Completed <% tp.file.title %>
 > ```tasks
 > done <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
 > short mode
 > ```
 
-## 5 Minute Journal
+
+## ✍️ 5-Minute Journal
+
 
 ### 🌞
-**3 things I am grateful for...**
-1. 
+**1. What am I grateful for today? 
 
-**What will I do to make today great?**
-- 
+**2. What will I do to make today great? 
 
-**Daily affirmations**
+**3. Daily affirmations: "I am capable of..."**
 
 
 ### 🌚
-**What were the highlights from your day?**
-1. 
+**1. What were the highlights of my day? 
 
-**How could I have made today even better?**
+**2. What could I have done to make today better?**
 
 
-## Today's Notes
+## 📄 Today's Notes
 
 > [!example]- Created Today
 > ```dataview

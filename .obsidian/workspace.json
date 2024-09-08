@@ -136,14 +136,21 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "290afe9ef8e9c575",
+            "type": "leaf",
+            "state": {
+              "type": "timer-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 205.5,
-    "collapsed": true
+    "width": 426.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,17 +162,19 @@
       "command-palette:Open command palette": false,
       "pomodoro-timer:Toggle timer panel": false,
       "periodic-notes:Open today": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "syncthing-integration:Open Syncthing conflict manager modal": false
     }
   },
-  "active": "d0dcc99086467b77",
+  "active": "c9fc0f5f3de61baf",
   "lastOpenFiles": [
-    "Bins/Templates/Obsidian Daily Note Template.md",
+    "().md",
     "Daily Notes/2024-09-08.md",
+    "Bins/Templates/Obsidian Daily Note Template.md",
+    "Tasks Dashboard.md",
     "2024-09-07.md",
     "2024-w36.md",
     "2024-09-09.md",
-    "Tasks Dashboard.md",
     "Daily Notes",
     "2024-09-08.md",
     "Bins/Templates",

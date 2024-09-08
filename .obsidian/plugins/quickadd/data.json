@@ -19,7 +19,42 @@
       },
       "insertAfter": {
         "enabled": true,
-        "after": "## Daily Log",
+        "after": "## ⏳ Time Log",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": true,
+        "createIfNotFoundLocation": "bottom"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "f05cc26a-cb6d-48ce-bdd3-7b0986044004",
+      "name": "Create Task Button",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "Daily Notes/{{DATE:YYYY-MM-DD}}.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "Bins/Templates/Obsidian Daily Note Template.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": " - [ ] {{VALUE}} 🛫{{DATE:YYYY-MM-DD}} 📅{{DATE:YYYY-MM-DD}}\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "## 📋[[Tasks Dashboard |Tasks]]",
         "insertAtEnd": false,
         "considerSubsections": false,
         "createIfNotFound": true,
