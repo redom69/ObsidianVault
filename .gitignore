@@ -1,0 +1,33 @@
+# Ignorar la carpeta de configuración de Obsidian, incluyendo el workspace
+.obsidian/
+!.obsidian/metadata.json
+!.obsidian/snippets/
+
+# Ignorar archivos temporales y de sistema
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Ignorar archivos ocultos generados por el sistema en macOS
+._*
+
+# Ignorar carpetas de sincronización o nubes
+.OneDrive/
+Dropbox/
+GoogleDrive/
+
+# Ignorar archivos de editores de texto o IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# No ignorar archivos markdown (.md)
+!*.md
+
+# Ignorar archivos de respaldo y temporales de Obsidian
+*.md~
+*.md.bak
