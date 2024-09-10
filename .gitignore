@@ -31,3 +31,5 @@ GoogleDrive/
 # Ignorar archivos de respaldo y temporales de Obsidian
 *.md~
 *.md.bak
+
+/Marsibionics
